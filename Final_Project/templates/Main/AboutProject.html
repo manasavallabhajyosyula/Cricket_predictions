@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<title>Main</title>
+		<link rel="stylesheet" href="static/css/bootstrap.css">
+		<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+		<script type="text/javascript"> 
+			window.history.forward(); 
+			function noBack() { 
+				window.history.forward(); 
+			} 
+		</script> 
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light px-sm-5 px-3 py-0">
+				<h1>
+					<a class="navbar-brand py-2" href="{{url_for('home')}}">
+						Cricket Predictions
+					</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto ml-xl-5 ml-lg-3 px-xl-5 px-lg-4 py-4 text-center">
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('home')}}">
+								Home
+								<span class="sr-only">
+									(current)
+								</span>
+							</a>
+						</li>
+						<li class="nav-item mx-lg-4 my-lg-0 my-3">
+							<a class="nav-link active" href="{{url_for('aboutproject')}}">
+								About Project
+							</a>
+						</li>
+						<li class="nav-item mx-lg-4 my-lg-0 my-3">
+							<a class="nav-link" href="{{url_for('parameters_prediction')}}">
+								Parameters Prediction
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="banner2-w3ls">
+		</div>
+		<div class="breadcrumb-agile">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="{{url_for('home')}}">
+							Home
+						</a>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page">
+						About Project
+					</li>
+				</ol>
+			</nav>
+		</div>
+		<b><div style="font-size: 50px; align-items: center; text-align: center; font-family: 'Courier New', Courier, monospace;">
+            Cricket Predictions
+        </div></b>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				According to the survey results taken from a reliable source, cricket stands number 7 in terms of popularity across the world.
+				The majority of participants of this sport come from Australia, India, Pakistan, South Africa and the UK, but cricket is also on the rise in other countries all over the world. 
+				Out of the love for cricket, people try to predict the outcome of a match and try to anticipate their favourite player statistics based on their individual cricket sense or based on luck strategy.
+				Would it be wonderful if there is a prediction machine or a system which predicts statistics of a match in a more accurate way? That’s an obvious “YES”! 
+
+                </p>
+        </div>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				The prediction machine or system can be achieved through data science. This project requires chunks of previous data to predict and several algorithms to make prediction accordingly.
+				This project can be used in prediction apps, fantasy games. It can also help in forming a suitable game strategy and improving player individual statiatics.
+            </p>
+        </div>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				Our project can predict run rate of a team, strike rate of a batsman, economy of a bowler and number of wickets taken by a bowler for a specific match.
+				From the above parameters, strike rate of a batsman, economy of a bowler, average of a batsman and average of a bowler can be used to predict most winning probable team.
+            </p>
+        </div>
+        <b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; text-align: center;">
+            <p style="font-size: 40px; color: black;">
+                Data
+            </p>
+        </div></b>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				Data used in this project is substantially gathered from authenticate and legitimate source such as cricinfo.com.
+				Our project deals with prediction of the above parameters for T20 format, so, the data extracted from the source are related to T20 format.
+				It was later scrapped and visualized to confirm the data availability.
+            </p>
+        </div>
+        <center>
+            <img src="../../static/images/AboutProject/cricinfo.jpg" style="align-content: center;">
+        </center>
+        <b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; text-align: center;">
+            <p style="font-size: 50px; color: black;">
+                Predicted Parameters
+            </p>
+        </div></b>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				The prediction machine or system can be achieved through data science.
+				This project requires chunks of previous data to predict and several algorithms to make prediction accordingly. This project can be used in prediction apps, fantasy games. It can also help in forming a suitable game strategy and improving player individual statiatics.
+            </p>
+        </div>
+        <div class="gallery py-5">
+			<div class="container py-xl-5 py-lg-3">
+				<div class="row gallery-grids">
+					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<div class="example-image-link" data-lightbox="example-set" data-title="">
+									<img src="static/images/Cricket Predictions/runrate.jpg" alt="" class="img-fluid" style="height: 242px;"/>
+									<div class="text-gallery-w3ls">
+										<h3>
+											Runrate
+										</h3>
+										<p>
+											Prediction
+										</p>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<div class="example-image-link" data-lightbox="example-set" data-title="">
+									<img src="static/images/Cricket Predictions/in match stats.jpg" alt="" class="img-fluid" style="height: 242px;"/>
+									<div class="text-gallery-w3ls">
+										<h3>
+											Player stats in match
+										</h3>
+										<p>
+											Prediction
+										</p>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<div class="example-image-link" data-lightbox="example-set" data-title="">
+									<img src="static/images/Cricket Predictions/team.jpg" alt="" class="img-fluid" style="height: 242px;"/>
+									<div class="text-gallery-w3ls">
+										<h3>
+											Team
+										</h3>
+										<p>
+											Prediction
+										</p>
+									</div>
+								</div>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+        <b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 50px;">
+                1. Runrate of Team:
+            </p>
+        </div></b>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+                It is known as runs per over i.e. number of runs scored in an over. KNN regressor is the algorithm used for finding the run rate.
+            </p>
+        </div>
+        <b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 50px;">
+                2. Player stats in Match:
+            </p>
+		</div></b>
+		<b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 50px;">
+                i. Strikerate:
+            </p>
+        </div></b>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				It is defined for a batsman as the average number of runs scored per 100 balls faced.
+				The higher the strike rate, the more effective a batsman is at scoring quickly. The algorithm used here to predict strike rate is gradient boosting regressor.</p>
+		</div>
+		<b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 50px;">
+                ii. Economy:
+            </p>
+		</div></b>
+		<div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				In cricket, a player’s economy rate is the average number of runs they have conceded per over bowled, the lower the economy, the better the bowler is.
+				After testing with several algorithms, the algorithm suited for giving the most probable output is KNN regressor.</p>
+		</div>
+		<b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 50px;">
+                iii. Wickets:
+            </p>
+		</div></b>
+		<div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				Our project can also predict the number of wickets taken by a bowler in a match.
+				The best algorithm suited to predict this kind of parameter is Random forest classifier.</p>
+		</div>
+        <b><div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 50px;">
+                3. Team:
+            </p>
+        </div></b>
+        <div style="padding-top: 20px; padding-left: 100px; padding-right: 100px; ">
+            <p style="font-family: 'Courier New', Courier, monospace; text-align: justify; color: black; font-size: 20px; text-indent: 100px;">
+				This is the team which is given by our project model considering it the most probable. It gives out the team on the basis of 4 parameters respectively.
+				Strike rate of a batsman, economy of a bowler, average of a batsman and average of a bowler is used. Here, averages are calculated where as strike rate and economy are predicted using gradient boosting and KNN regressor.
+            </p>
+        </div>
+        <div style="padding-bottom: 50px;">
+        </div>
+	</body>
+</html>

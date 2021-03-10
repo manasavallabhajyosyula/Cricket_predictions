@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<title>Main</title>
+		<link rel="stylesheet" href="static/css/bootstrap.css">
+		<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+		<script type="text/javascript"> 
+			window.history.forward(); 
+			function noBack() { 
+				window.history.forward(); 
+			} 
+		</script> 
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light px-sm-5 px-3 py-0">
+				<h1>
+					<a class="navbar-brand py-2" href="{{url_for('home')}}">
+						Cricket Predictions
+					</a>
+				</h1>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+					</span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto ml-xl-5 ml-lg-3 px-xl-5 px-lg-4 py-4 text-center">
+						<li class="nav-item">
+							<a class="nav-link" href="{{url_for('home')}}">
+								Home
+								<span class="sr-only">
+									(current)
+								</span>
+							</a>
+						</li>
+						<li class="nav-item mx-lg-4 my-lg-0 my-3">
+							<a class="nav-link" href="{{url_for('aboutproject')}}">
+								About Project
+							</a>
+						</li>
+						<li class="nav-item mx-lg-4 my-lg-0 my-3">
+							<a class="nav-link active" href="{{url_for('parameters_prediction')}}">
+								Parameters Prediction
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<div class="banner2-w3ls">
+		</div>
+		<div class="breadcrumb-agile">
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item">
+						<a href="{{url_for('home')}}">
+							Home
+						</a>
+					</li>
+					<li class="breadcrumb-item active" aria-current="page">
+						parameters_prediction
+					</li>
+				</ol>
+			</nav>
+		</div>
+		<div class="gallery py-5">
+			<div class="container py-xl-5 py-lg-3">
+				<h3 class="tittle mb-xl-5 mb-4 text-dark text-center">
+					<span class="text-uppercase">
+						our Project
+					</span>
+					Cricket Predictions
+				</h3>
+				<div class="row gallery-grids">
+					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="{{url_for('runrate')}}" data-lightbox="example-set" data-title="">
+									<img src="static/images/Cricket predictions/runrate.jpg" alt="" class="img-fluid" style="height: 242px;"/>
+									<div class="text-gallery-w3ls">
+										<h3>
+											Runrate
+										</h3>
+										<p>
+											Prediction
+										</p>
+									</div>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="{{url_for('player_stats')}}" data-lightbox="example-set" data-title="">
+									<img src="static/images/Cricket predictions/in match stats.jpg" alt="" class="img-fluid" style="height: 242px;"/>
+									<div class="text-gallery-w3ls">
+										<h3>
+											Player stats in Match
+										</h3>
+										<p>
+											Prediction
+										</p>
+									</div>
+								</a>
+							</figure>
+						</div>
+					</div>
+					<div class="col-md-4 gallery-grid wow fadeInUp animated" data-wow-delay=".5s">
+						<div class="grid">
+							<figure class="effect-apollo">
+								<a class="example-image-link" href="{{url_for('team')}}" data-lightbox="example-set" data-title="">
+									<img src="static/images/Cricket predictions/team.jpg" alt="" class="img-fluid" style="height: 242px;"/>
+									<div class="text-gallery-w3ls">
+										<h3>
+											Team
+										</h3>
+										<p>
+											Prediction
+										</p>
+									</div>
+								</a>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
